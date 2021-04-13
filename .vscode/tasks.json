@@ -4,19 +4,20 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "Make all",
-            "type": "shell",
-            "command": "make all",
-            "problemMatcher": [],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            }
-        },
-        {
             "label": "Build UI forms",
             "type": "shell",
-            "command": "make build_ui"
+            "command": "make build_ui",
+            "problemMatcher": []
+        },
+        {
+            "label": "Build for windows",
+            "type": "shell",
+            "command": "make windows"
+        },
+        {
+            "label": "Build all",
+            "type": "shell",
+            "command": "make all"
         }
     ]
 }

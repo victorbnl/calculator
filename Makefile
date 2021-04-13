@@ -1,4 +1,7 @@
-all: build_forms
+all: windows
+
+windows: build_forms
+	cxfreeze app.py --target-dir dist/windows --base-name Win32GUI
 
 build_forms:
 	@echo "Building UI forms"
