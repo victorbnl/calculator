@@ -11,6 +11,4 @@ It's made in Qt using PySide
 
 ## Building
 
-To build it for Windows, just do `make windows`
-
-You can also do `make all` to build it for all architectures but currently there is only Windows, please submit a pull request if you know how to build a PySide app to Linux
+To build it just run `make 

@@ -6,7 +6,7 @@
         {
             "label": "Build UI forms",
             "type": "shell",
-            "command": "make build_ui",
+            "command": "make forms",
             "problemMatcher": []
         },
         {

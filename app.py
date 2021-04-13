@@ -11,7 +11,7 @@ from PySide6.QtUiTools import QUiLoader
 
 from ui.mainwindow import Ui_Calculator
 
-from modules.calculate import calculate
+from modules.calculate import calculate, format_number
 
 
 class MainWindow(QWidget):
@@ -45,6 +45,9 @@ class MainWindow(QWidget):
             self.__setattr__(btn[0], fun)
         self.ui = Ui_Calculator()
         self.ui.setupUi(self)
+        
+        with open("qss/light.qss", "r") as f:
+            self.setStyleSheet(f.read())
 
     def correct(self):
         self.expression = self.expression[:-1]
@@ -58,10 +61,11 @@ class MainWindow(QWidget):
         self.findChild(QLabel, "label_calculation").setText(self.expression)
         try:
             self.findChild(QLabel, "label_calculation").setStyleSheet(
-            "color: grey")
-            result = str(round(calculate(self.expression), 8))
+                "color: grey")
+            result = format_number(str(round(calculate(self.expression), 8)))
         except:
-            self.findChild(QLabel, "label_calculation").setStyleSheet("color: red")
+            self.findChild(QLabel, "label_calculation").setStyleSheet(
+                "color: red")
             result = ""
         self.findChild(QLabel, "label_result").setText(result)
 

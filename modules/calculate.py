@@ -23,3 +23,7 @@ def calculate(s):
             left, operator, right = s.partition(op)
             if operator in operators:
                 return operators[operator](calculate(left), calculate(right))
+
+
+def format_number(s):
+    return s.strip("0").strip(".")
