@@ -1,0 +1,790 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Calculator</class>
+ <widget class="QWidget" name="Calculator">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>279</width>
+    <height>406</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Calculator</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QPushButton {
+    border: none
+}</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="4" column="3">
+    <widget class="QPushButton" name="button_multiply">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(57, 133, 255);</string>
+     </property>
+     <property name="text">
+      <string>×</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="0">
+    <widget class="QPushButton" name="button_4">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>4</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="0" colspan="4">
+    <widget class="QLabel" name="label_calculation">
+     <property name="font">
+      <font>
+       <pointsize>18</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(117, 117, 117);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="2">
+    <widget class="QPushButton" name="button_6">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>6</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="3">
+    <widget class="QPushButton" name="button_divide">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(57, 133, 255);</string>
+     </property>
+     <property name="text">
+      <string>÷</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="1">
+    <widget class="QPushButton" name="button_closing_parenthesis">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(26, 255, 0);</string>
+     </property>
+     <property name="text">
+      <string>)</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="2">
+    <widget class="QPushButton" name="button_9">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>9</string>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="0">
+    <widget class="QPushButton" name="button_comma">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(26, 255, 0);</string>
+     </property>
+     <property name="text">
+      <string>,</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="0">
+    <widget class="QPushButton" name="button_opening_parenthesis">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(26, 255, 0);</string>
+     </property>
+     <property name="text">
+      <string>(</string>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="0">
+    <widget class="QPushButton" name="button_1">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>1</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="0">
+    <widget class="QPushButton" name="button_7">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>7</string>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="2">
+    <widget class="QPushButton" name="button_3">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>3</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="1">
+    <widget class="QPushButton" name="button_8">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>8</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0" colspan="4">
+    <widget class="QLabel" name="label_result">
+     <property name="font">
+      <font>
+       <pointsize>24</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="1">
+    <widget class="QPushButton" name="button_5">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>5</string>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="3">
+    <widget class="QPushButton" name="button_add">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(57, 133, 255);</string>
+     </property>
+     <property name="text">
+      <string>+</string>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="1">
+    <widget class="QPushButton" name="button_0">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="2">
+    <widget class="QPushButton" name="button_power">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(57, 133, 255);</string>
+     </property>
+     <property name="text">
+      <string>^</string>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="1">
+    <widget class="QPushButton" name="button_2">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>2</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="3">
+    <widget class="QPushButton" name="button_substract">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(57, 133, 255);</string>
+     </property>
+     <property name="text">
+      <string>-</string>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="3">
+    <widget class="QPushButton" name="button_ce">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 57, 57);</string>
+     </property>
+     <property name="text">
+      <string>CE</string>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="2">
+    <widget class="QPushButton" name="button_c">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 57, 57);</string>
+     </property>
+     <property name="text">
+      <string>C</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>button_0</sender>
+   <signal>clicked()</signal>
+   <receiver>Calculator</receiver>
+   <slot>zero()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>164</x>
+     <y>396</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>179</x>
+     <y>532</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>button_1</sender>
+   <signal>clicked()</signal>
+   <receiver>Calculator</receiver>
+   <slot>one()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>83</x>
+     <y>335</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>72</x>
+     <y>466</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>button_2</sender>
+   <signal>clicked()</signal>
+   <receiver>Calculator</receiver>
+   <slot>two()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>164</x>
+     <y>335</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>180</x>
+     <y>431</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>button_4</sender>
+   <signal>clicked()</signal>
+   <receiver>Calculator</receiver>
+   <slot>four()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>83</x>
+     <y>273</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>71</x>
+     <y>529</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>button_5</sender>
+   <signal>clicked()</signal>
+   <receiver>Calculator</receiver>
+   <slot>five()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>164</x>
+     <y>273</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>139</x>
+     <y>485</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>button_3</sender>
+   <signal>clicked()</signal>
+   <receiver>Calculator</receiver>
+   <slot>three()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>245</x>
+     <y>335</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>255</x>
+     <y>557</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>button_6</sender>
+   <signal>clicked()</signal>
+   <receiver>Calculator</receiver>
+   <slot>six()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>245</x>
+     <y>273</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>409</x>
+     <y>513</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>button_7</sender>
+   <signal>clicked()</signal>
+   <receiver>Calculator</receiver>
+   <slot>seven()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>83</x>
+     <y>212</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>105</x>
+     <y>554</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>button_8</sender>
+   <signal>clicked()</signal>
+   <receiver>Calculator</receiver>
+   <slot>eight()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>164</x>
+     <y>212</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>144</x>
+     <y>567</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>button_9</sender>
+   <signal>clicked()</signal>
+   <receiver>Calculator</receiver>
+   <slot>nine()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>245</x>
+     <y>212</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>83</x>
+     <y>421</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>button_add</sender>
+   <signal>clicked()</signal>
+   <receiver>Calculator</receiver>
+   <slot>add()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>326</x>
+     <y>334</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>582</x>
+     <y>465</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>button_substract</sender>
+   <signal>clicked()</signal>
+   <receiver>Calculator</receiver>
+   <slot>substract()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>326</x>
+     <y>273</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>522</x>
+     <y>492</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>button_multiply</sender>
+   <signal>clicked()</signal>
+   <receiver>Calculator</receiver>
+   <slot>multiply()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>326</x>
+     <y>211</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>515</x>
+     <y>447</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>button_divide</sender>
+   <signal>clicked()</signal>
+   <receiver>Calculator</receiver>
+   <slot>divide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>326</x>
+     <y>150</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>330</x>
+     <y>531</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>button_comma</sender>
+   <signal>clicked()</signal>
+   <receiver>Calculator</receiver>
+   <slot>comma()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>55</x>
+     <y>372</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>7</x>
+     <y>403</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>button_power</sender>
+   <signal>clicked()</signal>
+   <receiver>Calculator</receiver>
+   <slot>power()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>194</x>
+     <y>124</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>74</x>
+     <y>401</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>button_closing_parenthesis</sender>
+   <signal>clicked()</signal>
+   <receiver>Calculator</receiver>
+   <slot>closingParenthesis()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>128</x>
+     <y>117</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>3</x>
+     <y>371</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>button_opening_parenthesis</sender>
+   <signal>clicked()</signal>
+   <receiver>Calculator</receiver>
+   <slot>openingParenthesis()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>53</x>
+     <y>118</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>0</x>
+     <y>333</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>button_ce</sender>
+   <signal>clicked()</signal>
+   <receiver>Calculator</receiver>
+   <slot>correct()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>300</x>
+     <y>367</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>2</x>
+     <y>282</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>button_c</sender>
+   <signal>clicked()</signal>
+   <receiver>Calculator</receiver>
+   <slot>reset()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>219</x>
+     <y>359</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>212</x>
+     <y>401</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>zero()</slot>
+  <slot>one()</slot>
+  <slot>two()</slot>
+  <slot>four()</slot>
+  <slot>five()</slot>
+  <slot>three()</slot>
+  <slot>six()</slot>
+  <slot>seven()</slot>
+  <slot>eight()</slot>
+  <slot>nine()</slot>
+  <slot>add()</slot>
+  <slot>substract()</slot>
+  <slot>multiply()</slot>
+  <slot>divide()</slot>
+  <slot>comma()</slot>
+  <slot>reset()</slot>
+  <slot>power()</slot>
+  <slot>openingParenthesis()</slot>
+  <slot>closingParenthesis()</slot>
+  <slot>correct()</slot>
+  <slot>makeCalc()</slot>
+ </slots>
+</ui>
